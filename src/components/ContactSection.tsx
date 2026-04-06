@@ -4,7 +4,7 @@ import { useState } from "react";
 const rules = [
   "Bez hackovanja ili cheatovanja",
   "Poštuj druge igrače",
-  "Bez griefanja baza van PVP zone",
+  
   "Bez spam-anja u chatu",
   "Slušaj admina i moderatore",
   "Zabranjen je hate speech",
