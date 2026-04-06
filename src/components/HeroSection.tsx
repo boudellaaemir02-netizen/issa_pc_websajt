@@ -47,7 +47,7 @@ const HeroSection = () => {
           </div>
 
           <div className="mt-6 inline-flex items-center gap-2 bg-secondary/80 px-4 py-2 rounded-lg border border-border">
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "hsl(120, 60%, 50%)" }} />
             <code className="text-sm text-muted-foreground">delaasmp.aternos.me</code>
           </div>
         </div>
