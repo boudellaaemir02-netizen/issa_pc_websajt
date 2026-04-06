@@ -1,18 +1,18 @@
-import { Monitor, Wrench, Truck, ShieldCheck } from "lucide-react";
+import { Sword, Shield, Users, Zap } from "lucide-react";
 
-const services = [
-  { icon: Monitor, title: "Konfiguracija po mjeri", desc: "Biramo komponente prema vašim potrebama i budžetu" },
-  { icon: Wrench, title: "Servis i nadogradnja", desc: "Popravka, čišćenje i nadogradnja postojećih računara" },
-  { icon: Truck, title: "Dostava u cijeloj BiH", desc: "Besplatna dostava za narudžbe preko 500 KM" },
-  { icon: ShieldCheck, title: "Garancija", desc: "Do 3 godine garancije na svaki build" },
+const features = [
+  { icon: Sword, title: "Crystal PVP", desc: "Intenzivne Crystal PVP bitke sa end kristalima i totema" },
+  { icon: Shield, title: "Anti-Cheat", desc: "Napredni anti-cheat sistem za fer igru" },
+  { icon: Users, title: "Aktivna zajednica", desc: "Prijateljska zajednica igrača iz cijele regije" },
+  { icon: Zap, title: "Bez lagova", desc: "Optimiziran server za glatko iskustvo igranja" },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-16 md:py-24 bg-background">
+    <section id="features" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((s) => (
+          {features.map((s) => (
             <div key={s.title} className="text-center">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-4">
                 <s.icon className="h-6 w-6" />

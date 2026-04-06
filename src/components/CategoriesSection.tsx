@@ -1,46 +1,45 @@
-import gamingPc from "@/assets/gaming-pc.png";
-import workstationPc from "@/assets/workstation-pc.png";
-import budgetPc from "@/assets/budget-pc.png";
-import streamingPc from "@/assets/streaming-pc.png";
-import componentsPc from "@/assets/components.png";
+import crystalPvp from "@/assets/crystal-pvp.jpg";
+import survival from "@/assets/survival.jpg";
+import smpCommunity from "@/assets/smp-community.jpg";
+import pvpArena from "@/assets/pvp-arena.jpg";
+import endDimension from "@/assets/end-dimension.jpg";
 
-const categories = [
-  { title: "Gaming računari", image: gamingPc, description: "Vrhunske performanse za najzahtjevnije igre" },
-  { title: "Radne stanice", image: workstationPc, description: "Profesionalni alati za posao i kreativnost" },
-  { title: "Budget buildovi", image: budgetPc, description: "Najbolji odnos cijene i kvaliteta" },
-  { title: "Streaming setovi", image: streamingPc, description: "Sve što vam treba za streaming" },
-  { title: "Komponente", image: componentsPc, description: "Pojedinačne komponente i nadogradnje" },
+const modes = [
+  { title: "Crystal PVP", image: crystalPvp, description: "Eksplozivne bitke sa end kristalima" },
+  { title: "Survival", image: survival, description: "Gradi, farma i preživi" },
+  { title: "SMP Community", image: smpCommunity, description: "Zajedničko igranje i građenje" },
+  { title: "PVP Arena", image: pvpArena, description: "1v1 i timski PVP mečevi" },
+  { title: "End Raid", image: endDimension, description: "Ubij Ender Dragona sa ekipom" },
 ];
 
 const CategoriesSection = () => {
   return (
-    <section id="categories" className="py-16 md:py-24 bg-background">
+    <section id="modes" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3">
-            TOP KATEGORIJE
+            GAME MODOVI
           </h2>
           <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-          {categories.map((cat) => (
-            <a
-              key={cat.title}
-              href="#"
-              className="group flex flex-col items-center text-center p-4 rounded-xl border border-border hover:shadow-lg hover:border-primary/30 transition-all"
+          {modes.map((mode) => (
+            <div
+              key={mode.title}
+              className="group flex flex-col items-center text-center p-4 rounded-xl border border-border hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30 transition-all"
             >
-              <div className="relative mb-4 w-full aspect-square flex items-center justify-center bg-muted rounded-lg overflow-hidden">
+              <div className="relative mb-4 w-full aspect-square flex items-center justify-center rounded-lg overflow-hidden">
                 <img
-                  src={cat.image}
-                  alt={cat.title}
+                  src={mode.image}
+                  alt={mode.title}
                   loading="lazy"
-                  className="w-4/5 h-4/5 object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-bold text-foreground text-sm mb-1">{cat.title}</h3>
-              <p className="text-xs text-muted-foreground">{cat.description}</p>
-            </a>
+              <h3 className="font-bold text-foreground text-sm mb-1">{mode.title}</h3>
+              <p className="text-xs text-muted-foreground">{mode.description}</p>
+            </div>
           ))}
         </div>
       </div>
