@@ -1,4 +1,4 @@
-import { MapPin, Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -20,56 +20,36 @@ const ContactSection = () => {
           <div className="w-16 h-1 bg-primary mx-auto rounded-full mt-4" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="space-y-4">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                <Instagram className="h-5 w-5" />
-              </div>
-              <div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">Instagram</div>
-                <div className="font-bold text-foreground">@probuild.sarajevo</div>
-              </div>
-            </a>
-
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                <Facebook className="h-5 w-5" />
-              </div>
-              <div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">Facebook</div>
-                <div className="font-bold text-foreground">ProBuild Sarajevo</div>
-              </div>
-            </a>
-
-            <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                <TikTokIcon className="h-5 w-5" />
-              </div>
-              <div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">TikTok</div>
-                <div className="font-bold text-foreground">@probuild.sarajevo</div>
-              </div>
-            </a>
-          </div>
-
-          <div className="p-6 rounded-xl bg-card border border-border">
-            <div className="flex items-center gap-3 mb-4">
-              <MapPin className="h-5 w-5 text-primary" />
-              <h3 className="font-bold text-foreground font-display text-lg">Lokacija</h3>
+        <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
+            <div className="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <Instagram className="h-6 w-6" />
             </div>
-            <p className="text-muted-foreground mb-4">
-              Ferhadija 25<br />
-              71000 Sarajevo<br />
-              Bosna i Hercegovina
-            </p>
-            <h4 className="font-bold text-foreground mb-2 mt-6">Radno vrijeme</h4>
-            <ul className="text-sm text-muted-foreground space-y-1">
-              <li className="flex justify-between"><span>Ponedjeljak - Petak</span><span className="text-foreground">09:00 - 20:00</span></li>
-              <li className="flex justify-between"><span>Subota</span><span className="text-foreground">10:00 - 17:00</span></li>
-              <li className="flex justify-between"><span>Nedjelja</span><span className="text-primary">Zatvoreno</span></li>
-            </ul>
-          </div>
+            <div className="text-center">
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Instagram</div>
+              <div className="font-bold text-foreground">@probuild.sarajevo</div>
+            </div>
+          </a>
+
+          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
+            <div className="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <Facebook className="h-6 w-6" />
+            </div>
+            <div className="text-center">
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">Facebook</div>
+              <div className="font-bold text-foreground">ProBuild Sarajevo</div>
+            </div>
+          </a>
+
+          <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
+            <div className="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+              <TikTokIcon className="h-6 w-6" />
+            </div>
+            <div className="text-center">
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">TikTok</div>
+              <div className="font-bold text-foreground">@probuild.sarajevo</div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
