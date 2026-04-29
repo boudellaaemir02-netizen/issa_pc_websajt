@@ -30,9 +30,8 @@ const Footer = () => {
               Kontakt
             </h4>
             <ul className="space-y-2 text-sm">
-              <li>+387 61 234 567</li>
-              <li>info@probuild.ba</li>
               <li>Ferhadija 25, Sarajevo</li>
+              <li>Instagram: @probuild.sarajevo</li>
             </ul>
           </div>
           <div>
