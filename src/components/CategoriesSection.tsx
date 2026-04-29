@@ -1,44 +1,100 @@
-import crystalPvp from "@/assets/crystal-pvp.jpg";
-import survival from "@/assets/survival.jpg";
-import smpCommunity from "@/assets/smp-community.jpg";
-import pvpArena from "@/assets/pvp-arena.jpg";
-import endDimension from "@/assets/end-dimension.jpg";
+import budgetPc from "@/assets/budget-pc.jpg";
+import gamingPc from "@/assets/gaming-pc.jpg";
+import workstationPc from "@/assets/workstation-pc.jpg";
+import streamingPc from "@/assets/streaming-pc.jpg";
+import components from "@/assets/components.jpg";
 
-const modes = [
-  { title: "Crystal PVP", image: crystalPvp, description: "Eksplozivne bitke sa end kristalima" },
-  { title: "Survival", image: survival, description: "Gradi, farma i preživi" },
-  { title: "SMP Community", image: smpCommunity, description: "Zajedničko igranje i građenje" },
-  { title: "PVP Arena", image: pvpArena, description: "1v1 i timski PVP mečevi" },
-  { title: "End Raid", image: endDimension, description: "Ubij Ender Dragona sa ekipom" },
+const builds = [
+  {
+    title: "Starter Build",
+    image: budgetPc,
+    price: "1.299 KM",
+    specs: ["Ryzen 5 5600", "16GB DDR4", "RTX 3050 / RX 6600", "500GB NVMe SSD"],
+    badge: "Najprodavanije",
+  },
+  {
+    title: "Gaming Pro",
+    image: gamingPc,
+    price: "2.499 KM",
+    specs: ["Ryzen 7 7700", "32GB DDR5", "RTX 4070", "1TB NVMe SSD"],
+    badge: null,
+  },
+  {
+    title: "Streamer Setup",
+    image: streamingPc,
+    price: "3.199 KM",
+    specs: ["Intel i7-14700K", "32GB DDR5", "RTX 4070 Super", "2TB NVMe + 2TB HDD"],
+    badge: "Novo",
+  },
+  {
+    title: "Workstation Elite",
+    image: workstationPc,
+    price: "4.899 KM",
+    specs: ["Ryzen 9 7950X", "64GB DDR5", "RTX 4080 Super", "2TB NVMe Gen4"],
+    badge: "Premium",
+  },
+  {
+    title: "Komponente & Upgrade",
+    image: components,
+    price: "od 49 KM",
+    specs: ["GPU, CPU, RAM", "SSD / NVMe", "Napajanja & coolers", "Case-ovi i fanovi"],
+    badge: null,
+  },
 ];
 
 const CategoriesSection = () => {
   return (
-    <section id="modes" className="py-16 md:py-24 bg-background">
+    <section id="builds" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3">
-            GAME MODOVI
+          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3 font-display">
+            KONFIGURACIJE
           </h2>
-          <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Spremne konfiguracije za svaki budžet — sve cijene su krajnje, sa PDV-om.
+          </p>
+          <div className="w-16 h-1 bg-primary mx-auto rounded-full mt-4" />
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-          {modes.map((mode) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {builds.map((b) => (
             <div
-              key={mode.title}
-              className="group flex flex-col items-center text-center p-4 rounded-xl border border-border hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30 transition-all"
+              key={b.title}
+              className="bg-card rounded-xl border border-border overflow-hidden hover:shadow-xl hover:shadow-primary/20 hover:border-primary/40 transition-all group"
             >
-              <div className="relative mb-4 w-full aspect-square flex items-center justify-center rounded-lg overflow-hidden">
+              <div className="relative overflow-hidden">
+                {b.badge && (
+                  <span className="absolute top-4 left-4 z-10 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">
+                    {b.badge}
+                  </span>
+                )}
                 <img
-                  src={mode.image}
-                  alt={mode.title}
+                  src={b.image}
+                  alt={b.title}
                   loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h3 className="font-bold text-foreground text-sm mb-1">{mode.title}</h3>
-              <p className="text-xs text-muted-foreground">{mode.description}</p>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-bold text-foreground font-display">{b.title}</h3>
+                  <span className="text-primary font-black text-lg font-display">{b.price}</span>
+                </div>
+                <ul className="space-y-1.5 mb-5">
+                  {b.specs.map((spec) => (
+                    <li key={spec} className="text-sm text-muted-foreground flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                      {spec}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#contact"
+                  className="block text-center w-full py-2.5 bg-primary text-primary-foreground font-bold rounded-lg hover:opacity-90 transition-opacity text-sm"
+                >
+                  Naruči
+                </a>
+              </div>
             </div>
           ))}
         </div>

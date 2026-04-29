@@ -2,61 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 260 20% 8%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
 
-    --card: 260 20% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 260 20% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 270 70% 55%;
+    --primary: 0 84% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 260 20% 16%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 260 20% 14%;
-    --muted-foreground: 260 10% 60%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 270 50% 20%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 0 70% 30%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 260 20% 18%;
-    --input: 260 20% 18%;
-    --ring: 270 70% 55%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 84% 55%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 260 20% 10%;
+    --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 270 70% 55%;
+    --sidebar-primary: 0 84% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 260 20% 16%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 260 20% 18%;
-    --sidebar-ring: 270 70% 55%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 84% 55%;
 
-    /* Custom tokens */
-    --hero-bg: 260 25% 6%;
+    --hero-bg: 0 0% 4%;
     --hero-foreground: 0 0% 100%;
-    --nav-bg: 260 25% 6%;
+    --nav-bg: 0 0% 6%;
     --nav-foreground: 0 0% 100%;
-    --topbar-bg: 270 70% 45%;
+    --topbar-bg: 0 84% 45%;
     --topbar-foreground: 0 0% 100%;
-    --footer-bg: 260 25% 6%;
-    --footer-foreground: 260 10% 60%;
+    --footer-bg: 0 0% 4%;
+    --footer-foreground: 0 0% 70%;
     --footer-heading: 0 0% 100%;
 
-    --glow-primary: 270 100% 65%;
+    --glow-primary: 0 100% 60%;
   }
 }
 
@@ -70,7 +69,8 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .font-minecraft {
-    font-family: 'Press Start 2P', monospace;
+  .font-display {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.02em;
   }
 }

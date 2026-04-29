@@ -1,19 +1,27 @@
-import { Sword, Shield, Users, Zap } from "lucide-react";
+import { Cpu, Wrench, ShieldCheck, Truck, RefreshCw, HeadphonesIcon } from "lucide-react";
 
 const features = [
-  { icon: Sword, title: "Crystal PVP", desc: "Intenzivne Crystal PVP bitke sa end kristalima i totema" },
-  { icon: Shield, title: "Anti-Cheat", desc: "Napredni anti-cheat sistem za fer igru" },
-  { icon: Users, title: "Aktivna zajednica", desc: "Prijateljska zajednica igrača iz cijele regije" },
-  { icon: Zap, title: "Bez lagova", desc: "Optimiziran server za glatko iskustvo igranja" },
+  { icon: Cpu, title: "Custom Build", desc: "Sastavljanje PC-a po tvojim potrebama i budžetu" },
+  { icon: RefreshCw, title: "Polovni PC", desc: "Provjereni polovni računari sa garancijom" },
+  { icon: Wrench, title: "Servis & Nadogradnja", desc: "Dijagnostika, čišćenje i upgrade postojećeg PC-a" },
+  { icon: ShieldCheck, title: "24 mj. Garancija", desc: "Garancija na sve nove komponente i sklopove" },
+  { icon: Truck, title: "Dostava po BiH", desc: "Brza dostava na adresu uz pouzeće" },
+  { icon: HeadphonesIcon, title: "Tehnička podrška", desc: "Pomoć i savjeti i nakon kupovine" },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="features" className="py-16 md:py-24 bg-secondary">
+    <section id="services" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3 font-display">
+            NAŠE USLUGE
+          </h2>
+          <div className="w-16 h-1 bg-primary mx-auto rounded-full" />
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((s) => (
-            <div key={s.title} className="text-center">
+            <div key={s.title} className="text-center p-6 rounded-xl border border-border bg-card hover:border-primary/40 transition-colors">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary mb-4">
                 <s.icon className="h-6 w-6" />
               </div>
