@@ -1,35 +1,23 @@
-import { Users, Gamepad2, Copy } from "lucide-react";
-import { useState } from "react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 const TopBar = () => {
-  const [copied, setCopied] = useState(false);
-
-  const copyIP = () => {
-    navigator.clipboard.writeText("delaasmp.aternos.me");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
     <div className="bg-topbar text-topbar-foreground text-sm">
       <div className="container mx-auto flex items-center justify-between py-2 px-4">
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-1.5">
-            <Gamepad2 className="h-3.5 w-3.5" />
-            Minecraft Java Edition
+            <MapPin className="h-3.5 w-3.5" />
+            Sarajevo, BiH
           </span>
           <span className="hidden sm:flex items-center gap-1.5">
-            <Users className="h-3.5 w-3.5" />
-            Online 24/7
+            <Clock className="h-3.5 w-3.5" />
+            Pon - Sub: 09:00 - 20:00
           </span>
         </div>
-        <button
-          onClick={copyIP}
-          className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
-        >
-          <Copy className="h-3.5 w-3.5" />
-          {copied ? "Kopirano!" : "delaasmp.aternos.me"}
-        </button>
+        <a href="tel:+38761234567" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity font-semibold">
+          <Phone className="h-3.5 w-3.5" />
+          +387 61 234 567
+        </a>
       </div>
     </div>
   );
