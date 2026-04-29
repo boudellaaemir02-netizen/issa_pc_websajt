@@ -76,18 +76,7 @@ const CategoriesSection = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-foreground font-display">{b.title}</h3>
-                  <span className="text-primary font-black text-lg font-display">{b.price}</span>
-                </div>
-                <ul className="space-y-1.5 mb-5">
-                  {b.specs.map((spec) => (
-                    <li key={spec} className="text-sm text-muted-foreground flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      {spec}
-                    </li>
-                  ))}
-                </ul>
+                <h3 className="text-xl font-bold text-foreground font-display mb-4">{b.title}</h3>
                 <a
                   href="#contact"
                   className="block text-center w-full py-2.5 bg-primary text-primary-foreground font-bold rounded-lg hover:opacity-90 transition-opacity text-sm"
