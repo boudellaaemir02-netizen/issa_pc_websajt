@@ -48,7 +48,7 @@ const CategoriesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3 font-display">
-            KONFIGURACIJE
+            NAŠE KONFIGURACIJE
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Spremne konfiguracije za svaki budžet — sve cijene su krajnje, sa PDV-om.

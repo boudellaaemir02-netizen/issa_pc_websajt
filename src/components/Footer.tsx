@@ -22,7 +22,6 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#builds" className="hover:text-primary transition-colors">Konfiguracije</a></li>
-              <li><a href="#used" className="hover:text-primary transition-colors">Polovni PC</a></li>
               <li><a href="#services" className="hover:text-primary transition-colors">Servis</a></li>
             </ul>
           </div>

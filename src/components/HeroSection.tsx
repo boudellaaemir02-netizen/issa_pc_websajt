@@ -20,7 +20,7 @@ const HeroSection = () => {
             po mjeri.
           </h1>
           <p className="text-muted-foreground text-lg mb-8 max-w-lg">
-            Custom gaming, streaming i workstation konfiguracije. Polovni PC-jevi sa garancijom. Stručna ugradnja, dijagnostika i nadogradnja u Sarajevu.
+            Custom gaming, streaming i workstation konfiguracije. Stručna ugradnja, dijagnostika i nadogradnja u Sarajevu.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

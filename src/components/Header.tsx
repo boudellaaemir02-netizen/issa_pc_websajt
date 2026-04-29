@@ -4,7 +4,6 @@ import { useState } from "react";
 const navLinks = [
   { label: "Početna", href: "#" },
   { label: "Konfiguracije", href: "#builds" },
-  { label: "Polovni PC", href: "#used" },
   { label: "Usluge", href: "#services" },
   { label: "Kontakt", href: "#contact" },
 ];
