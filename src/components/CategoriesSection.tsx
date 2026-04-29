@@ -3,43 +3,19 @@ import gamingPc from "@/assets/gaming-pc.jpg";
 import workstationPc from "@/assets/workstation-pc.jpg";
 import streamingPc from "@/assets/streaming-pc.jpg";
 import components from "@/assets/components.jpg";
+import windowsInstall from "@/assets/windows-install.jpg";
+import pcCleaning from "@/assets/pc-cleaning.jpg";
+import pcBuyback from "@/assets/pc-buyback.jpg";
 
 const builds = [
-  {
-    title: "Starter Build",
-    image: budgetPc,
-    price: "1.299 KM",
-    specs: ["Ryzen 5 5600", "16GB DDR4", "RTX 3050 / RX 6600", "500GB NVMe SSD"],
-    badge: "Najprodavanije",
-  },
-  {
-    title: "Gaming Pro",
-    image: gamingPc,
-    price: "2.499 KM",
-    specs: ["Ryzen 7 7700", "32GB DDR5", "RTX 4070", "1TB NVMe SSD"],
-    badge: null,
-  },
-  {
-    title: "Streamer Setup",
-    image: streamingPc,
-    price: "3.199 KM",
-    specs: ["Intel i7-14700K", "32GB DDR5", "RTX 4070 Super", "2TB NVMe + 2TB HDD"],
-    badge: "Novo",
-  },
-  {
-    title: "Workstation Elite",
-    image: workstationPc,
-    price: "4.899 KM",
-    specs: ["Ryzen 9 7950X", "64GB DDR5", "RTX 4080 Super", "2TB NVMe Gen4"],
-    badge: "Premium",
-  },
-  {
-    title: "Komponente & Upgrade",
-    image: components,
-    price: "od 49 KM",
-    specs: ["GPU, CPU, RAM", "SSD / NVMe", "Napajanja & coolers", "Case-ovi i fanovi"],
-    badge: null,
-  },
+  { title: "Starter Build", image: budgetPc, badge: "Najprodavanije" },
+  { title: "Gaming Pro", image: gamingPc, badge: null },
+  { title: "Streamer Setup", image: streamingPc, badge: "Novo" },
+  { title: "Workstation Elite", image: workstationPc, badge: "Premium" },
+  { title: "Komponente & Upgrade", image: components, badge: null },
+  { title: "Windows 10/11 Instalacija", image: windowsInstall, badge: null },
+  { title: "Čišćenje Vaših Kompjutera", image: pcCleaning, badge: null },
+  { title: "Otkup Kompjutera", image: pcBuyback, badge: "Otkup" },
 ];
 
 const CategoriesSection = () => {
