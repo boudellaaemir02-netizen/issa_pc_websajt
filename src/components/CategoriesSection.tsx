@@ -84,13 +84,6 @@ const CategoriesSection = () => {
                   Naruči
                 </a>
               </div>
-                <a
-                  href="#contact"
-                  className="block text-center w-full py-2.5 bg-primary text-primary-foreground font-bold rounded-lg hover:opacity-90 transition-opacity text-sm"
-                >
-                  Naruči
-                </a>
-              </div>
             </div>
           ))}
         </div>
