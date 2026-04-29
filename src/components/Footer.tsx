@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer className="bg-footer text-footer-foreground">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="col-span-2 md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
             <div className="flex items-center gap-2 mb-4">
               <Cpu className="h-6 w-6 text-primary" />
               <span className="text-xl font-black tracking-tight font-display">
@@ -13,7 +13,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm">
-              PC building & resseling u Sarajevu. Custom konfiguracije, polovni PC-jevi i servis.
+              PC building & resseling u Sarajevu. Custom konfiguracije i servis.
             </p>
           </div>
           <div>
@@ -30,18 +30,9 @@ const Footer = () => {
               Kontakt
             </h4>
             <ul className="space-y-2 text-sm">
-              <li>Ferhadija 25, Sarajevo</li>
               <li>Instagram: @probuild.sarajevo</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-footer-heading font-bold mb-4 text-sm uppercase tracking-wider">
-              Radno vrijeme
-            </h4>
-            <ul className="space-y-2 text-sm">
-              <li>Pon - Pet: 09:00 - 20:00</li>
-              <li>Subota: 10:00 - 17:00</li>
-              <li>Nedjelja: zatvoreno</li>
+              <li>Facebook: ProBuild Sarajevo</li>
+              <li>TikTok: @probuild.sarajevo</li>
             </ul>
           </div>
         </div>
