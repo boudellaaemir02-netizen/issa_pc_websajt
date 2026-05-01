@@ -59,7 +59,7 @@ Deno.serve(async (req) => {
       });
     }
 
-    const TO = 'emirboudellaa19@gmail.com';
+    const TO = 'boudellaaemir02@gmail.com';
 
     const html = `
       <div style="font-family: Arial, sans-serif; color:#111;">
