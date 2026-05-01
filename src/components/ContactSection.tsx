@@ -52,6 +52,8 @@ const ContactSection = () => {
             </div>
           </a>
         </div>
+
+        <ContactForm />
       </div>
     </section>
   );
