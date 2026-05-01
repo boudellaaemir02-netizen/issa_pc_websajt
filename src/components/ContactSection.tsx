@@ -21,13 +21,13 @@ const ContactSection = () => {
         </div>
 
         <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
+          <a href="https://instagram.com/probuild_sarajevo/" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors">
             <div className="w-14 h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
               <Instagram className="h-6 w-6" />
             </div>
             <div className="text-center">
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Instagram</div>
-              <div className="font-bold text-foreground">@probuild.sarajevo</div>
+              <div className="font-bold text-foreground">@probuild_sarajevo</div>
             </div>
           </a>
 
