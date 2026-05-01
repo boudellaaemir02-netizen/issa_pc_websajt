@@ -1,4 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
