@@ -32,7 +32,7 @@ const TopBar = () => {
             <TikTokIcon className="h-4 w-4" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/probuild_sarajevo/"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"

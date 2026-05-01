@@ -30,9 +30,9 @@ const Footer = () => {
               Kontakt
             </h4>
             <ul className="space-y-2 text-sm">
-              <li>Instagram: @probuild.sarajevo</li>
+              <li><a href="https://instagram.com/probuild_sarajevo/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Instagram: @probuild_sarajevo</a></li>
               <li>Facebook: ProBuild Sarajevo</li>
-              <li>TikTok: @probuild.sarajevo</li>
+              <li>TikTok: @probuild_sarajevo</li>
             </ul>
           </div>
         </div>
