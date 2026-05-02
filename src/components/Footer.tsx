@@ -1,4 +1,4 @@
-import { Cpu } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,12 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Cpu className="h-6 w-6 text-primary" />
-              <span className="text-xl font-black tracking-tight font-display">
-                <span className="text-primary">Pro</span>Build
-              </span>
-            </div>
+            <img src={logo} alt="ProBuild Sarajevo logo" className="h-20 w-auto mb-4" />
             <p className="text-sm">
               PC building & resseling u Sarajevu. Custom konfiguracije i servis.
             </p>
