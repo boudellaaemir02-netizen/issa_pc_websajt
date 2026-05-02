@@ -1,5 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
-import ContactForm from "./ContactForm";
+import logo from "@/assets/logo.png";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -53,7 +53,9 @@ const ContactSection = () => {
           </a>
         </div>
 
-        <ContactForm />
+        <div className="flex justify-center mt-12">
+          <img src={logo} alt="ProBuild Sarajevo logo" className="w-48 md:w-64 h-auto" />
+        </div>
       </div>
     </section>
   );
