@@ -1,5 +1,6 @@
-import { Menu, X, Cpu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Početna", href: "#" },
@@ -13,13 +14,9 @@ const Header = () => {
 
   return (
     <header className="bg-nav text-nav-foreground sticky top-0 z-50 border-b border-border">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4">
-        <a href="#" className="flex items-center gap-2">
-          <Cpu className="h-7 w-7 text-primary" />
-          <span className="text-2xl font-black tracking-tight font-display">
-            <span className="text-primary">Pro</span>Build
-            <span className="text-muted-foreground text-sm font-semibold ml-2 hidden sm:inline">SARAJEVO</span>
-          </span>
+      <div className="container mx-auto flex items-center justify-between py-3 px-4">
+        <a href="#" className="flex items-center gap-3">
+          <img src={logo} alt="ProBuild Sarajevo logo" className="h-12 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-1">

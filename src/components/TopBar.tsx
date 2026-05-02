@@ -1,4 +1,5 @@
 import { Facebook, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 // TikTok icon (Lucide nema TikTok, koristimo inline SVG)
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -11,7 +12,10 @@ const TopBar = () => {
   return (
     <div className="bg-topbar text-topbar-foreground text-sm">
       <div className="container mx-auto flex items-center justify-between py-2 px-4">
-        <span className="font-semibold tracking-wide">ProBuild Sarajevo</span>
+        <span className="flex items-center gap-2 font-semibold tracking-wide">
+          <img src={logo} alt="ProBuild Sarajevo" className="h-6 w-auto" />
+          ProBuild Sarajevo
+        </span>
         <div className="flex items-center gap-4">
           <a
             href="https://facebook.com"

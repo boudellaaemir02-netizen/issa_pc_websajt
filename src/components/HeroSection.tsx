@@ -1,4 +1,5 @@
 import heroPc from "@/assets/hero-pc.jpg";
+import logo from "@/assets/logo.png";
 import { ArrowRight, Wrench } from "lucide-react";
 
 const HeroSection = () => {
@@ -10,6 +11,7 @@ const HeroSection = () => {
       </div>
       <div className="relative container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-2xl">
+          <img src={logo} alt="ProBuild Sarajevo logo" className="h-24 md:h-32 w-auto mb-6 drop-shadow-[0_0_30px_hsl(var(--primary)/0.4)]" />
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-3 font-display">
             🔧 PC Building & Resseling — Sarajevo
           </p>
